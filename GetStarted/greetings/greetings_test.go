@@ -9,8 +9,10 @@ func TestHelloName(t *testing.T) {
 	name := "SomeName"
 	want := regexp.MustCompile(name)
 
-	message, err := Hello("SomeName")
+	message, err := Hello(name)
 
+	//If the name is contained within the returned message, and there are no errors
+	//this is what we expect.
 	if want.MatchString(message) && err == nil {
 		return
 	}
