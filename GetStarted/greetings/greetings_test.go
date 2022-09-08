@@ -14,6 +14,7 @@ func TestHelloName(t *testing.T) {
 	//If the name is contained within the returned message, and there are no errors
 	//this is what we expect.
 	if want.MatchString(message) && err == nil {
+		//Not throwing an error is a pass
 		return
 	}
 
@@ -25,6 +26,7 @@ func TestHelloEmpty(t *testing.T) {
 
 	//This is testing if the error handling works in the Hello function.
 	if message == "" && err != nil {
+		//Not throwing an error is a pass
 		return
 	}
 
