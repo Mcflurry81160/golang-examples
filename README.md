@@ -4,7 +4,7 @@ This is a tutorial project that I use to practice some Golang basics.
 ## Notes
 ### Running program as an executable
 1. The instructions were taken from https://go.dev/doc/tutorial/compile-install
-2. '$ echo $PATH' gives the path to the Shell path of the machine. This is the same as the how we 'add to the path' with Windows.
+2. `$ echo $PATH` gives the path to the Shell path of the machine. This is the same as the how we 'add to the path' with Windows.
 3. 'Go build' compiles the code into an executable in the current path 
 4. To run this from the current directory, run './(name of the main file)' e.g. '$ ./hello'
 5. To run this from anywhere on the computer, we need to add the Go install path to the Shell path of the machine.
